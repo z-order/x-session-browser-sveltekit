@@ -634,7 +634,7 @@ export const xsession: XSession = new XSession({
 
 ## src/routes/3-xsession-send-server-side/+page.server.ts
 
-```svelte
+```ts
 //
 // 'xsession' is the XSession wrapper which is XSessionWrapper.
 //  - You can use xession without creating a new instance.
@@ -723,5 +723,4 @@ export const actions: import('./$types').Actions = {
 		return { success: true, name: apiRespFromServer?.msgData?.data?.name };
 	}
 };
-
 ```
